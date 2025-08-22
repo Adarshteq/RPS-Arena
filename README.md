@@ -2,7 +2,7 @@
 
 A modern, interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript. Features sleek animations, sound effects, and a responsive design that works on all devices.
 
-## [Live][https://adarshteq.github.io/RPS-Arena/]
+##  🚀 [Live](https://adarshteq.github.io/RPS-Arena/)
 
 ## ✨ Features
 
