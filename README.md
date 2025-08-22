@@ -2,6 +2,8 @@
 
 A modern, interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript. Features sleek animations, sound effects, and a responsive design that works on all devices.
 
+## [Live][https://adarshteq.github.io/RPS-Arena/]
+
 ## ✨ Features
 
 - **Modern UI Design**: Glassmorphism design with dark/light mode toggle
@@ -46,7 +48,7 @@ A modern, interactive Rock Paper Scissors game built with HTML, CSS, and JavaScr
    cd RPS-Arena
    ```
 
-##🌐 Browser Support
+## Browser Support 🌐
 
 This game works on all modern browsers including:
 
@@ -58,7 +60,7 @@ Safari
 
 Edge
 
-##📱 Responsive Design
+## Responsive Design 📱
 
 The game adapts to different screen sizes:
 
