@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Rock Paper Scissors</h1>
+      <div class="controls">
+        <button class="control-btn theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="control-btn rules-btn" aria-label="Show rules">
+          <i class="fas fa-question"></i>
+        </button>
+        <button class="control-btn sound-toggle" aria-label="Toggle sound">
+          <i class="fas fa-volume-up"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="game-container">
+      <div class="score-board">
+        <div class="score-card">
+          <div class="score-title">Your Score</div>
+          <div class="score-value user-score">0</div>
+        </div>
+        <div class="score-card">
+          <div class="score-title">Computer Score</div>
+          <div class="score-value computer-score">0</div>
+        </div>
+        <div class="score-card">
+          <div class="score-title">Rounds Played</div>
+          <div class="score-value rounds-count">0</div>
+        </div>
+      </div>
+      
+      <div class="choices-container">
+        <div class="choice-btn rock-btn">
+          <div class="choice-icon">🪨</div>
+          <div>Rock</div>
+        </div>
+        <div class="choice-btn paper-btn">
+          <div class="choice-icon">📃</div>
+          <div>Paper</div>
+        </div>
+        <div class="choice-btn scissors-btn">
+          <div class="choice-icon">✂️</div>
+          <div>Scissors</div>
+        </div>
+      </div>
+      
+      <div class="game-area">
+        <div class="player-area">
+          <div class="area-title">Your Choice</div>
+          <div class="hand-icon user-hand">🤜</div>
+        </div>
+        
+        <div class="result-area">Start Playing!!</div>
+        
+        <div class="computer-area">
+          <div class="area-title">Computer's Choice</div>
+          <div class="hand-icon computer-hand">🤛</div>
+        </div>
+      </div>
+      
+      <div class="history-container">
+        <h3 class="history-title"><i class="fas fa-history"></i> Round History</h3>
+        <div class="history-list" id="historyList">
+          <!-- History items will be added here dynamically -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Results Popup -->
+    <div class="popup-overlay">
+      <div class="popup-content">
+        <h2 class="popup-title">Game Over!</h2>
+        <p class="popup-message">Me Wins! 😒</p>
+        <button class="popup-close-btn">Play Again</button>
+      </div>
+    </div>
+    
+    <!-- Rules Popup -->
+    <div class="rules-overlay">
+      <div class="rules-content">
+        <h2 class="rules-title">How to Play</h2>
+        <ul class="rules-list">
+          <li><i class="fas fa-check-circle"></i> <strong>Rock</strong> beats <strong>Scissors</strong> (rock crushes scissors)</li>
+          <li><i class="fas fa-check-circle"></i> <strong>Scissors</strong> beats <strong>Paper</strong> (scissors cut paper)</li>
+          <li><i class="fas fa-check-circle"></i> <strong>Paper</strong> beats <strong>Rock</strong> (paper covers rock)</li>
+          <li><i class="fas fa-check-circle"></i> First to <strong>3 wins</strong> is the champion!</li>
+          <li><i class="fas fa-check-circle"></i> If you and the computer choose the same item, it's a <strong>draw</strong></li>
+        </ul>
+        <button class="rules-close-btn">Got It!</button>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
